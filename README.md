@@ -19,26 +19,18 @@ _Read the docs at [gomplate.hairyhenderson.ca][docs-url]._
 
 [![Install Docs][install-docs-image]][install-docs-url]
 
-A [Go template](https://golang.org/pkg/text/template/)-based CLI tool. `gomplate` can be used as an alternative to
-[`envsubst`](https://www.gnu.org/software/gettext/manual/html_node/envsubst-Invocation.html) but also supports
-additional template datasources such as: JSON, YAML, AWS EC2 metadata, [BoltDB](https://github.com/boltdb/bolt),
+`gomplate` is a template renderer which supports a growing list of datasources,
+such as: JSON (_including EJSON - encrypted JSON_), YAML, AWS EC2 metadata, [BoltDB](https://github.com/boltdb/bolt),
 [Hashicorp Consul](https://www.consul.io/) and [Hashicorp Vault](https://www.vaultproject.io/) secrets.
 
-I really like `envsubst` for use as a super-minimalist template processor. But its simplicity is also its biggest flaw: it's all-or-nothing with shell-like variables.
+To get a feel for how `gomplate` works, watch this screencast:
 
-Gomplate is an alternative that will let you process templates which also include shell-like variables. Also there are some useful built-in functions that can be used to make templates even more expressive.
 
-Read more documentation at [gomplate.hairyhenderson.ca][docs-url]!
+
+
+Read the documentation at [gomplate.hairyhenderson.ca][docs-url]!
 
 _Please report any bugs found in the [issue tracker](https://github.com/hairyhenderson/gomplate/issues/)._
-
-## Releasing
-
-Right now the release process is semi-automatic.
-
-1. Create a release tag: `git tag -a v0.0.9 -m "Releasing v0.9.9" && git push --tags`
-2. Build binaries & compress most of them: `make build-release`
-3. Create a release in [github](https://github.com/hairyhenderson/gomplate/releases)!
 
 ## License
 
